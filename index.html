@@ -110,6 +110,14 @@
                       border: 0.5px solid #333;
                       border-radius: 18px;
                       color: #fff;
+                      @media screen and (max-width: 500px) {
+                        h2{
+                          font-size: 18px;
+                        }
+                        p{
+                          font-size: 8px !important;
+                        }
+                      }
                     }
                     .boxes {
               display: flex;
@@ -127,6 +135,20 @@
               display: flex;
               justify-content: center;
               align-items: center;
+              @media screen and (max-width: 1420px) {
+                width: 150px;
+                height: 150px;
+              }
+              @media screen and (max-width: 1020px) {
+                width: 100px;
+                height: 100px;
+                font-size: 12px;
+              }
+              @media screen and (max-width: 480px) {
+                width: 100px;
+                height: 100px;
+                font-size: 10px;
+              }
             }
           .box::before {
               content: "";
@@ -309,7 +331,7 @@
             >
           </div>
         </div>
-        <p class="text-center fs-4 p-5">
+        <p class="text-center p-5">
           Farm2Plate ERP is an essential ERP for Food industry to improve and
           automate the supply chain processes. Built on open-source technology,
           the ERP brings innovation within reach of everybody. The ERP covers
