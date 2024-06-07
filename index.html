@@ -21,12 +21,7 @@
     <style>
                   body {
                       margin: 0;
-                      overflow-y: auto; /* show scrollbar */
-                      scrollbar-width: none; /* hide scrollbar in Chrome and Firefox */
-                      -ms-overflow-style: none; /* hide scrollbar in IE and Edge */
-                  }
-                  body::-webkit-scrollbar {
-                      display: none; /* hide scrollbar in Chrome and Safari */
+                      
                   }
                   .header {
                         background-image: url('./imgs/bg.webp');
@@ -75,25 +70,38 @@
                         background-color: #23527c;
                     }
                   .header-content {
-                  display: flex;
-                  margin-top: 80px;
-                  max-height: 500px;
-                  flex-direction: row;
-                  justify-content: center;
-                  align-items: center;
-                  img {
-                  width: 80%;
-                  overflow: hidden;
-                  }
-                    .text-info {
-                      width: 70%;
-                      color: #fff;
-                      font-size: 24px;
-                      font-weight: bold;
-                      background-color: rgba(0, 0, 0, 0.65); /* semi-transparent background */
-                      padding: 20px;
-                      border-radius: 12px;
-                    }
+                      display: flex;
+                      margin-top: 80px;
+                      max-height: 500px;
+                      flex-direction: row;
+                      justify-content: center;
+                      align-items: center;
+                      img {
+                        width: 80%;
+                        overflow: hidden;
+                      }
+                      .text-info {
+                        width: 70%;
+                        color: #fff;
+                        font-size: 24px;
+                        font-weight: bold;
+                        background-color: rgba(0, 0, 0, 0.65); /* semi-transparent background */
+                        padding: 20px;
+                        border-radius: 12px;
+                      }
+                      @media screen and (max-width: 1125px) {
+                        img{
+                          width: 300%;
+                        }
+                        .text-info {
+                          width: 100%;
+                          font-size: 14px;
+                          padding: 12px;
+                          h1{
+                            font-size: 21px;
+                          }
+                        }
+                      }
                   }
                 .useCase {
                     background-image: url('./imgs/greenBg.jpg');
