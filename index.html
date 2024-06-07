@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AKIKO SHERMAN INFOTECH</title>
+    <link rel="shortcut icon" href="./imgs/logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <style>
+                  body {
+                      margin: 0;
+                      overflow-y: auto; /* show scrollbar */
+                      scrollbar-width: none; /* hide scrollbar in Chrome and Firefox */
+                      -ms-overflow-style: none; /* hide scrollbar in IE and Edge */
+                  }
+                  body::-webkit-scrollbar {
+                      display: none; /* hide scrollbar in Chrome and Safari */
+                  }
+                  .header {
+                        background-image: url('./imgs/bg.webp');
+                        background-size: cover;
+                        background-position: center;
+                        height: 100vh;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                  .navbar {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        background-color: transparent!important;
+                        border: none;
+                        box-shadow: none;
+                    }
+                  .navbar-brand {
+                        font-size: 24px;
+                        font-weight: bold;
+                        color: #fff;
+                    }
+                  .nav-link {
+                        color: #fff;
+                        font-size: 18px;
+                        font-weight: 500;
+                        margin-left: 10px;
+                        transition: color 0.2s ease;
+                    }
+                  .nav-link:hover {
+                        color: #666;
+                    }
+                  .btn-contact {
+                        background-color: #337ab7;
+                        color: #fff;
+                        border: none;
+                        border-radius: 50px;
+                        margin-left: 15px;
+                        padding: 8px 16px;
+                        font-size: 16px;
+                        cursor: pointer;
+                    }
+                  .btn-contact:hover {
+                        background-color: #23527c;
+                    }
+                  .header-content {
+                  display: flex;
+                  margin-top: 80px;
+                  max-height: 500px;
+                  flex-direction: row;
+                  justify-content: center;
+                  align-items: center;
+                  img {
+                  width: 80%;
+                  overflow: hidden;
+                  }
+                    .text-info {
+                      width: 70%;
+                      color: #fff;
+                      font-size: 24px;
+                      font-weight: bold;
+                      background-color: rgba(0, 0, 0, 0.65); /* semi-transparent background */
+                      padding: 20px;
+                      border-radius: 12px;
+                    }
+                  }
+                .useCase {
+                    background-image: url('./imgs/greenBg.jpg');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    height: 80vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .inner {
+                      backdrop-filter: blur(8px) brightness(50%);
+                      margin: 30px;
+                      padding: 20px;
+                      border: 0.5px solid #333;
+                      border-radius: 18px;
+                      color: #fff;
+                    }
+                    .boxes {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+            }
+          .box {
+              width: 200px;
+              height: 200px;
+              margin: 10px;
+              background-color: transparent;
+              border: 1px solid #fff;
+              border-radius: 12px;
+              position: relative;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          .box::before {
+              content: "";
+              position: absolute;
+              top: 10px;
+              right: 10px;
+              width: 20px;
+              height: 20px;
+              background-color: #34c759;
+              border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          .box::before::after {
+              content: "\2713";
+              font-size: 12px;
+              color: #fff;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+          .box-text {
+              text-align: center;
+              font-size: 18px;
+              color: #333;
+              z-index: 1; /* to bring the text to the front */
+            }
+          }
+
+          .techStack {
+                background: url('./imgs/TechStack.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                padding: 20px;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                justify-content: center;
+                align-items: center;
+            }
+            .techStack h2 {
+                margin-top: 0;
+            }
+            .techStack img {
+                width: 100px;
+                height: 100px;
+                margin: 10px;
+                border-radius: 10px;
+                backdrop-filter: brightness(50%) blur(4px);
+            }
+            .techStack .row {
+                margin-bottom: 20px;
+            }
+            .techStack .col-md-6 {
+                padding: 20px;
+            }
+            .techStack .cloud-devops, .techStack .hyper-automation {
+              color: white;
+              text-align: center;
+                /* background-color: #fff; */
+                padding: 20px;
+                /* border: 1px solid #ddd; */
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+          .footer {
+        background-color: #333;
+        color: #fff;
+        padding: 30px 0;
+      }
+      .logo {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+      }
+      .copyright {
+        font-size: 12px;
+        color: #666;
+      }
+      .social-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .social-links li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+      .social-links a {
+        color: #fff;
+      }
+      .social-links a:hover {
+        color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#"
+        ><img
+          src="./imgs/logo.png"
+          alt="Logo"
+          width="35"
+          height="30"
+          class="d-inline-block mr-3 align-text-top"
+        />AKIKO SHERMAN INFOTECH</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" style="color: #333;" href="#"
+              >THE COMPANY <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">SOLUTIONS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">BLOG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">TECHNOLOGIES</a>
+          </li>
+          <li class="nav-item">
+            <button class="btn-contact">Call Us</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="header">
+      <div class="header-content">
+        <img src="./imgs/Farm2Plant.png" alt="logo" />
+        <div class="text-info">
+          <h1>Welcome to AKIKO SHERMAN INFOTECH</h1>
+          <p>We are a team of experts in IT solutions</p>
+        </div>
+      </div>
+    </div>
+    <div class="useCase">
+      <div class="inner">
+        <h2 class="text-center pb-3">AI Use Cases</h2>
+        <div class="boxes">
+          <div class="box">
+            <span class="box-text">Demand Forecasting</span>
+          </div>
+          <div class="box">
+            <span class="box-text">Route Optimization</span>
+          </div>
+          <div class="box">
+            <span class="box-text">AI Chatbot Assistance</span>
+          </div>
+          <div class="box">
+            <span class="box-text">Tracibility with Blockchain</span>
+          </div>
+          <div class="box">
+            <span class="box-text text-center"
+              >IOT for monitoring fish health</span
+            >
+          </div>
+          <div class="box">
+            <span class="box-text text-center"
+              >Recommendations for consumers</span
+            >
+          </div>
+        </div>
+        <p class="text-center fs-4 p-5">
+          Farm2Plate ERP is an essential ERP for Food industry to improve and
+          automate the supply chain processes. Built on open-source technology,
+          the ERP brings innovation within reach of everybody. The ERP covers
+          all the aspects of food industry, regardless you are a food production
+          company or a food wholesaler or a retailer. It is an integrated
+          platform that supports your current requirements, and a strategic
+          platform that supports your future innovation.
+        </p>
+      </div>
+    </div>
+
+    <div class="div-container">
+      <div class="techStack">
+        <h1 class="text-light text-center mb-5">Tech Stack</h1>
+        <h3 class="text-light text-center">Full Stack</h3>
+        <div class="row justify-content-center">
+          <img src="./imgs/nodeJs.png" alt="Tech 1" />
+          <img src="./imgs/nodeJs.png" alt="Tech 2" />
+          <img src="./imgs/nodeJs.png" alt="Tech 3" />
+          <img src="./imgs/nodeJs.png" alt="Tech 4" />
+          <img src="./imgs/nodeJs.png" alt="Tech 5" />
+          <img src="./imgs/nodeJs.png" alt="Tech 6" />
+          <img src="./imgs/nodeJs.png" alt="Tech 7" />
+          <img src="./imgs/nodeJs.png" alt="Tech 8" />
+          <img src="./imgs/nodeJs.png" alt="Tech 9" />
+        </div>
+        <div class="row">
+          <div class="col-md-6 cloud-devops">
+            <h3>Cloud and DevOps</h3>
+            <div class="row justify-content-center">
+              <img src="./imgs//docker.webp" alt="Tech 10" />
+              <img src="./imgs//docker.webp" alt="Tech 11" />
+              <img src="./imgs//docker.webp" alt="Tech 12" />
+            </div>
+            <div class="row justify-content-center">
+              <img src="./imgs//docker.webp" alt="Tech 13" />
+              <img src="./imgs//docker.webp" alt="Tech 14" />
+              <img src="./imgs//docker.webp" alt="Tech 15" />
+            </div>
+          </div>
+          <div class="col-md-6 hyper-automation">
+            <h3>Hyper Automation</h3>
+            <div class="row justify-content-center">
+              <img src="./imgs/python.webp" alt="Tech 16" />
+              <img src="./imgs/python.webp" alt="Tech 17" />
+              <img src="./imgs/python.webp" alt="Tech 18" />
+            </div>
+            <div class="row justify-content-center">
+              <img src="./imgs/python.webp" alt="Tech 19" />
+              <img src="./imgs/python.webp" alt="Tech 20" />
+              <img src="./imgs/python.webp" alt="Tech 21" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-12">
+            <img src="./imgs/logo.png" alt="Company Logo" class="logo" />
+            <h5>AKIKO SHERMAN INFOTECH</h5>
+            <p>
+              Akiko Sherman Infotech is an independent division under Sherman
+              group of companies. With more than 20 years of experience, the
+              company has successfully delivered over 300 IT Projects for
+              various Central and State Govt. Depts, PSUs anci other enterprises
+            </p>
+            <p class="copyright">
+              Copyright &copy; 2024 AKIKO SHERMAN INFOTECH. All rights reserved.
+            </p>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="row">
+              <div class="col-md-4 col-sm-12">
+                <h5>Sitemap</h5>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">The Company</a></li>
+                  <li><a href="#">Our Solutions</a></li>
+                  <li><a href="#">Portfolio</a></li>
+                  <li><a href="#">Technologies</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4 col-sm-12">
+                <h5>Our Solutions</h5>
+                <ul>
+                  <li><a href="#">E-Governance</a></li>
+                  <li><a href="#">Web Solutions</a></li>
+                  <li><a href="#">Mobility Solutions</a></li>
+                  <li><a href="#">Digital Marketing</a></li>
+                  <li><a href="#">GIGW Websites</a></li>
+                  <li><a href="#">Data Analytics</a></li>
+                  <li><a href="#">Staffing and Support</a></li>
+                  <li><a href="#">Emerging Technologies</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4 col-sm-12">
+                <h5>More</h5>
+                <ul>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Resources</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms of Use</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <ul class="social-links">
+              <li>
+                <a href="#" target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#" target="_blank"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+            </ul>
+            <h5 class="mt-3 mb-3">Follow us on Social Media</h5>
+            <p>
+              Reach out to us:
+              <a href="mailto:info@company.com">info@company.com</a>
+            </p>
+
+            <p>
+              123 Main St, Anytown, USA 12345<br />
+              Phone: 555-555-5555<br />
+              Email: [info@company.com](mailto:info@company.com)
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
