@@ -313,6 +313,11 @@ body {
     }
 }
 @media screen and (max-width: 995px) {
+    .show{
+        padding: 10px;
+        border-radius: 12px;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
     .slogan-text{
         font-size: 2rem;
         margin-top: 0;
@@ -440,10 +445,11 @@ body {
     }
     .big-number{
         font-size: 7rem;
-        top: 25%;
+        top: 22%;
     }
     .slogan{
         padding-bottom: 30px;
+        width: 70%;
     }
     .keyBenefits{
         height: auto;
