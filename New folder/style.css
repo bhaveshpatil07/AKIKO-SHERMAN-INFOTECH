@@ -47,7 +47,7 @@ body {
 }
 
 .header{
-    background: url('../imgs/bg.jpg');
+    background: url('./imgs/bg.jpg');
     background-size: cover;
     mask-repeat: no-repeat;
     height: 100vh;
@@ -149,7 +149,7 @@ body {
 }
 
 .keyBenefits{
-    background: url('../imgs/keyBenefits.jpg');
+    background: url('./imgs/keyBenefits.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     /* filter: brightness(70%); */
@@ -232,7 +232,7 @@ body {
 
 
 .techStack {
-    background: url('../imgs/TechStack1.jpg');
+    background: url('./imgs/TechStack1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     padding: 20px;
