@@ -137,11 +137,11 @@ body {
 .box::before {
     content: "\2713";
     font-size: 24px;
-    font-style: bold;
+    /* font-style: bold; */
     color: #34C759;
     position: absolute;
-    top: 0;
-    right: 10px;
+    top: -6px;
+    right: 3px;
 }
 .box span {
     font-size: 18px;
@@ -210,13 +210,13 @@ body {
 }
 
 /* Make it responsive */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
    .folder {
         width: 40%;
     }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
     .folder-container{
         margin: 0px;
     }
@@ -382,5 +382,42 @@ body {
     }
     .box {
         width: calc(40%);
+    }
+}
+
+
+@media screen and (max-width: 377px) {
+    .navbar-brand span{
+        font-size: 15px;
+    }
+    .info{
+        box-shadow: none;
+        font-size: 12px;
+        padding-right: 5px;
+    }
+    .header-first-row{
+        padding-bottom: 0;
+    }
+    .header-second-row{
+        p{
+            padding: 0;
+            margin: 0;
+            font-size: 11px;
+            max-height: 65px;
+            overflow: hidden;
+        }
+    }
+    .big-number{
+        font-size: 8rem;
+        top: 21%;
+    }
+    .slogan{
+        padding-bottom: 30px;
+    }
+    .keyBenefits{
+        height: 86vh;
+    }
+    .footer{
+        padding: 10px;
     }
 }
