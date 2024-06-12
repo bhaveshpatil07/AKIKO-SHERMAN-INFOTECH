@@ -415,9 +415,40 @@ body {
         padding-bottom: 30px;
     }
     .keyBenefits{
-        height: 86vh;
+        height: 90vh;
     }
     .footer{
         padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: auto;
+        padding: 10px;
+    }
+    .info {
+        width: 60%;
+    }
+    .slogan {
+        width: 40%;
+    }
+    .big-number {
+        font-size: 10rem;
+        left: 50%;
+        top: 12%;
+    }
+    .header-first-row {
+        flex-direction: column;
+    }
+    .header-second-row {
+        padding: 10px;
+    }
+    .boxes {
+        flex-direction: column;
+    }
+    .box {
+        width: 100%;
+        margin: 10px 0;
     }
 }
