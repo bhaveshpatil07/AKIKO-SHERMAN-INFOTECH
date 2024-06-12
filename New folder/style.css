@@ -440,10 +440,11 @@ body {
     }
     .big-number{
         font-size: 7rem;
-        top: 23%;
+        top: 22%;
     }
     .slogan{
         padding-bottom: 30px;
+        width: 50%;
     }
     .keyBenefits{
         height: auto;
